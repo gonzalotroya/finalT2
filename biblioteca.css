@@ -1,0 +1,54 @@
+p{
+    color: blue !important;
+    background-color: green;
+}
+
+#uno {
+    display: flex;
+    flex-direction: row;
+}
+#uno:active{
+    display: flex;
+    flex-direction: row-reverse;
+}
+img {
+    width: 100%;
+}
+img:active{
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    box-shadow: 12px 10px 10px black;
+}
+#dos {
+    margin: auto;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    display: none;
+}
+h2:hover {
+    font-size: 28px;
+}
+
+@media screen and (min-width: 300px) and (max-width: 550px) {
+    * {
+        visibility: hidden;       
+    }
+}
+@media screen and (max-width: 800px) and (min-width: 500px) {
+  
+    #libro {
+        display: none;
+    }
+
+    h1{
+        display: block;
+        width: 100%;
+        color: blue;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+}
